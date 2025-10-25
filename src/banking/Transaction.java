@@ -12,7 +12,6 @@ public class Transaction {
     private final double amount;
     private final String description;
 
-    // Форматтер для красивого вывода даты и времени
     private static final DateTimeFormatter FORMATTER =
             DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm:ss");
 
@@ -23,7 +22,6 @@ public class Transaction {
         this.description = description;
     }
 
-    // Геттеры
     public LocalDateTime getTimestamp() {
         return timestamp;
     }
